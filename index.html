@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASU.TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!-- ── HEADER: ASU.TECH title + single-line nav ── -->
+  <header id="top">
+    <div class="header-top">
+      <div class="logo">ASU<span class="accent">.</span>TECH</div>
+    </div>
+    <div class="header-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#planner">Academic Planner</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    
+    <!-- ── HOME: Profile image left + About right ── -->
+    <section id="home" class="home-section">
+      <div class="home-grid">
+        
+        <!-- Profile image LEFT -->
+        <div class="profile-wrap">
+          <img src="image.jpeg" alt="Alexander Solomon Ushahemba" class="profile-img">
+        </div>
+        
+        <!-- About text RIGHT -->
+        <div id="about" class="about-text">
+          <p class="section-label">About Me</p>
+          <h2>Alexander Solomon Ushahemba</h2>
+          <p>Welcome to my portfolio!
+            I am Solomon, a First-Year Computer Science student at MIVA Open University with a passion for technology and innovation. My interests include Software Engineering, Cybersecurity, and Networking.</p>
+          <p>I am committed to continuous learning, developing technical skills, and exploring solutions that solve real-world problems. Thank you for visiting my portfolio and joining me on my journey in the tech industry.</p>
+           <p class="tagline">&nbsp; Build. Connect.<span class="accent-text">Defend.</span></p>
+          <a href="#projects" class="btn-primary">View My Projects</a>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ── SERVICES ── -->
+    <section id="services" class="section">
+      <div class="section-inner">
+        <p class="section-label">What I Do</p>
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">&#128187;</div>
+            <h3>Software Engineering</h3>
+            <p>Designing and building scalable applications with clean, maintainable code and modern best practices.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128268;</div>
+            <h3>Network Configuration</h3>
+            <p>Setting up and optimizing secure, high-performance network infrastructures for real-world use.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128274;</div>
+            <h3>Cybersecurity</h3>
+            <p>Identifying vulnerabilities, hardening systems, and implementing defenses against modern threats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section alt-section">
+      <div class="section-inner">
+        <p class="section-label">Portfolio</p>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-thumb project-thumb--1"><span>01</span></div>
+            <div class="project-info">
+              <h3>Vulnerability Assessment</h3>
+              <p>Threat analysis and penetration testing report.</p>
+              <a href="vulnerability-assessment-report.pdf" class="project-link" target="_blank">View PDF &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb project-thumb--2"><span>02</span></div>
+            <div class="project-info">
+              <h3>Network Design</h3>
+              <p>Secure enterprise network topology and configuration plan.</p>
+              <a href="network-design-report.pdf" class="project-link" target="_blank">View PDF &rarr;</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb project-thumb--3"><span>03</span></div>
+            <div class="project-info">
+              <h3>Web App Security Audit</h3>
+              <p>OWASP Top 10 security audit of the ASU.TECH portfolio.</p>
+              <a href="web-app-security-audit.pdf" class="project-link" target="_blank">View PDF &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── ACADEMIC PLANNER ── -->
+    <section id="planner" class="section">
+      <div class="section-inner">
+        <p class="section-label">Tools</p>
+        <h2>Academic Planner</h2>
+        <div class="planner-wrap">
+          <div class="planner-add">
+            <input type="text" id="taskInput" placeholder="Add a task or assignment…" maxlength="100">
+            <input type="date" id="taskDate">
+            <button class="btn-primary" id="addTaskBtn">Add</button>
+          </div>
+          <ul id="taskList" class="task-list"></ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section alt-section">
+      <div class="section-inner contact-grid">
+        <div class="contact-intro">
+          <p class="section-label">Get In Touch</p>
+          <h2>Contact Me</h2>
+          <p>Have a project, question, or collaboration in mind? Send me a message and I'll get back to you.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">ASU<span class="accent">.</span>TECH</span>
+      <p>&copy; 2026 Alexander Solomon Ushahemba. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
